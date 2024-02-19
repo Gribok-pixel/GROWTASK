@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url(font.css);
+@import url(header.css);
+@import url(main.css);
+@import url(section.css);
+@import url(slider.css);
+@import url(presentation.css);
+@import url(support.css);
+@import url(footer.css);
+@import url(modal.css);
+
+:root {
+    --aqua-main: #14CCCC;
+    --aqua-dark: #11A6A6;
+    --aqua-light: #17E5E5;
+    --aqua-hover: #E1FAFA;
+    --aqua-press: #DAF2F2;
+
+    --black: #030D0D;
+    --white: #FFFFFF;
+    --dark: #3D4040;
+    --error: #FF6666;
+}
+
+/* Глобальные стили */
+/* Верстка с поинтами: 1920, 1366, 768, но верстал так чтоб между поинтами тоже верстка не рушилась*/
+
+body {
+    font-family: 'Raleway';
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 74vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 1919px) {
+    .wrapper {
+        width: 93.4vw;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95.8vw;
+    }
+}
+
+

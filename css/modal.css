@@ -1,0 +1,40 @@
+.modal {
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(24, 24, 24, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-none {
+    display: none;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+
+    height: 48px;
+    width: 48px;
+    background-color: var(--aqua-main);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.modal-close:hover {
+    background-color: var(--aqua-dark);
+}
+.modal-close:active {
+    background-color: var(--aqua-main);
+}

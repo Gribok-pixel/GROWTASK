@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GROWTASK</title>
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<div class="header-fixed">
+    <div class="wrapper">
+
+        <!-- Desctop меню -->
+        <header>
+            <div class="logo">
+                <a href="#main" class="logo__link">
+                    <img src="img/logo.png" alt="logo">
+                    <div>Наверх</div>
+                </a>
+            </div>
+
+            <nav class="desc-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="#text-and-picure">Текст и картинки</a>
+                    </li>
+                    <li>
+                        <a href="#slider-example">Пример слайдера</a>
+                    </li>
+                    <li>
+                        <a href="#btns-and-pictures">Кнопки и картинки</a>
+                    </li>
+                    <li>
+                        <a href="#question-answer">Вопрос — ответ</a>
+                    </li>
+                    <li>
+                        <a href="#main-form" class="form-btn">К форме</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-menu">
+                <img src="img/burger.png" alt="btn">
+            </nav>
+        </header>
+
+        <!-- Отдельное меню для мобильных устройств -->
+        <div class="burger-block">
+            <div class="burger-header">
+                <div class="burger-header__title">Меню</div>
+                <div class="close-btn"><img src="img/close.png" alt=""></div>
+            </div>
+
+            <div class="burger-main">
+                <ul class="burger-main__list">
+                    <li>
+                        <a href="#text-and-picure">Текст и картинки</a>
+                    </li>
+                    <li>
+                        <a href="#slider-example">Пример слайдера</a>
+                    </li>
+                    <li>
+                        <a href="#btns-and-pictures">Кнопки и картинки</a>
+                    </li>
+                    <li>
+                        <a href="#question-answer">Вопрос — ответ</a>
+                    </li>
+                </ul>
+                <div class="burger-main__form">
+                    <a href="#main-form" class="form-btn">К форме</a>
+                </div>
+                <div class="social">
+                    <div><a href="https://vk.com/growtask"><img src="img/vk.png" alt=""></a></div>
+                    <div><a href="https://t.me/growtask"><img src="img/telegram.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Главная секция -->
+<main class="wrapper" id="main">
+    <div class="main">
+        <div class="main__text">
+            <div class="main__title">
+                Покажи нам чудеса <span>своей вёрстки</span>
+            </div>
+            <div class="main__paragraph">
+                Это текстовое задание, которое нужно просто и грамотно сверстать. 
+                Мы уверены, что у тебя всё получится.
+            </div>
+            <div class="main__anchor-form">
+                <div>Покажи скролл <span>до формы:</span></div>
+                <a href="#main-form" class="form-btn">К форме</a>
+            </div>
+        </div>
+
+        <div class="main__image">
+            <img class="child1" src="img/main1.png" alt="">
+            <img class="child2" src="img/main2.png" alt="">
+            <img class="child3" src="img/main3.png" alt="">
+        </div>
+    </div>
+</main>
+
+<!-- Текст и картинки -->
+<section id="text-and-picure">
+    <div class="wrapper">
+        <div class="section">
+
+            <div class="section__text">
+                <div>
+                    <div class="section__title">
+                        Про вакансию
+                    </div>
+                    <div class="section__paragraph">
+                        Мы ищем аккуратного верстальщика, который хочет учиться и развиваться.
+                        С этим мы, конечно же, поможем.
+                        <br>
+                        <br>
+                        Напомним про условия:
+                    </div>
+                </div>
+                <div class="section__conditions">
+                    <div class="condition">
+                        <div class="condition-title child">20 000</div>
+                        <div class="condition-text">Твой оклад на время стажировки (Возможны премии)</div>
+                    </div>
+                    <div class="condition">
+                        <div class="condition-title">5/2</div>
+                        <div class="condition-text">Рабочий график</div>
+                    </div>
+                    <div class="condition">
+                        <div class="condition-title">8 ч</div>
+                        <div class="condition-text">Рабочий день</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__image">
+                <div class="scroll-img">
+                    <img src="img/section1.png" alt="">
+                    <img src="img/section2.png" alt="">
+                    <img src="img/section3.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Слайдер -->
+<div class="container" id="slider-example">
+    <div class="">
+        <div class="slider">
+
+            <div class="slider-head">
+                <div class="slider-head__title">Сверстай слайдер</div>
+                <div class="slider-head__btn">
+                    <div class="prev-btn"><img src="img/prev-Icon.png" alt=""></div>
+                    <div class="next-btn"><img src="img/next-Icon.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper slider-carousel">
+                <div class="swiper-wrapper slider-carousel__line">
+                    <div class="swiper-slide slider-img">
+                        <!-- onmause для изменения картинки при навеедении -->
+                        <img src="img/slider/slide1.png" alt=""
+                            id="img/slider/slide1.png" 
+                            onmouseover="this.src='img/slider/slider-hover.png';"
+                            onmouseout="this.src='img/slider/slide1.png';"
+                            >
+                        <div class="slider-img__title">Северная корона</div>
+                    </div>
+                    <div class="swiper-slide slider-img">
+                        <img src="img/slider/slide2.png" alt=""
+                            id="img/slider/slide2.png" 
+                            onmouseover="this.src='img/slider/slider-hover.png';"
+                            onmouseout="this.src='img/slider/slide2.png';"
+                        >
+                        <div class="slider-img__title">Moscow barbering school</div>
+                    </div>
+                    <div class="swiper-slide slider-img">
+                        <img src="img/slider/slide3.png" alt=""
+                            id="img/slider/slide3.png" 
+                            onmouseover="this.src='img/slider/slider-hover.png';"
+                            onmouseout="this.src='img/slider/slide3.png';"
+                        >
+                        <div class="slider-img__title">Rh store</div>
+                    </div>
+                    <div class="swiper-slide slider-img">
+                        <img src="img/slider/slide4.png" alt=""
+                            id="img/slider/slide4.png" 
+                            onmouseover="this.src='img/slider/slider-hover.png';"
+                            onmouseout="this.src='img/slider/slide4.png';"
+                        >
+                        <div class="slider-img__title">Poolspecial</div>
+                    </div>
+                    <div class="swiper-slide slider-img">
+                        <img src="img/slider/slide5.png" alt=""
+                            id="img/slider/slide5.png" 
+                            onmouseover="this.src='img/slider/slider-hover.png';"
+                            onmouseout="this.src='img/slider/slide5.png';"
+                        >
+                        <div class="slider-img__title">Rh prod</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-img-size"><img src="img/slider/slide1.png" alt=""></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Кнопки и картинки -->
+<div class="presentation" id="btns-and-pictures">
+    <div class="wrapper">
+        <div class="presentation-container">
+
+            <div class="presentation__screen">
+                <img src="img/presentation/presentation1.png" alt="">
+            </div>
+    
+            <div class="presentation__slides">
+                <div class="presentation-btn active">
+                    <img src="img/presentation/presentation1.png" alt="">
+                    <span>Картинка 1</span>
+                </div>
+                <div class="presentation-btn">
+                    <img src="img/presentation/presentation2.png" alt="">
+                    <span>Картинка 2</span>
+                </div>
+                <div class="presentation-btn">
+                    <img src="img/presentation/presentation3.png" alt="">
+                    <span>Картинка 3</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Вопрос - ответ -->
+<div class="support" id="question-answer">
+    <div class="wrapper">
+        <div class="support__title">Ответы на вопросы</div>
+        <div class="support__items">
+
+            <div class="support__drop-down"> <!-- Общий блок вопрос-ответ'а -->
+                <div class="supports-item"> <!-- Блок вопроса и кнопки -->
+                    <div class="support-item__text">
+                        У вас много проектов?
+                    </div>
+                    <div class="support-items__icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="support-answer"> <!-- Блок выпадающего ответа -->
+                    Достаточно чтобы работать и получать удовольствие от работы&#41;
+                </div>
+            </div>
+
+            <div class="support__drop-down">
+                <div class="supports-item">
+                    <div class="support-item__text">
+                        Есть ли карьерный рост?
+                    </div>
+                    <div class="support-items__icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="support-answer">
+                    Карьерный рост есть, но он зависит только от тебя. Никто специально тянуть не будет.
+                </div>
+            </div>
+
+            <div class="support__drop-down">
+                <div class="supports-item">
+                    <div class="support-item__text">
+                        У вас большой штат?
+                    </div>
+                    <div class="support-items__icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="support-answer">
+                    Штать большой
+                </div>
+            </div>
+
+            <div class="support__drop-down">
+                <div class="supports-item">
+                    <div class="support-item__text">
+                        Какие цели у вашей студии?
+                    </div>
+                    <div class="support-items__icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="support-answer">
+                    Развивать свои продукты в среднем ценовом сегменте. Занять не занятую нишу отличных сайтов по адекватной цене
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Подвал -->
+<footer>
+    <div class="footer">
+
+        <!-- Текст с иконками соцсетей -->
+        <div class="footer-text">
+            <div>Форма ОС</div>
+            <p>
+                Сверстай форму обратной связи. Будет круто, 
+                если заявку будут приходить сюда: a@growtask.ru
+            </p>
+        </div>
+
+        <div class="footer-social">
+            <div class="footer-social__text">Не забудь вставить соц.сети</div>
+            <div class="footer-social__icons">
+                <div><a href="https://vk.com/growtask"><img src="img/vk.png" alt=""></a></div>
+                <div><a href="https://t.me/growtask"><img src="img/telegram.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <!-- Форма -->
+        <form id="main-form">
+            <div class="form-grid">
+                <input name="question" type="text" placeholder="Напиши вопрос*" minlength="3">
+                <input type="text" placeholder="Телефон или почта*" minlength="3">
+                <input type="text" placeholder="Твое имя*" minlength="3">
+                <input type="text" placeholder="Соцсеть или мессенджер" minlength="3">
+                <div class="submit-form">
+                    <input id="submit" type="submit" value="Отправить заявку">
+                    <div><img src="img/checked.png" alt=""></div>
+                    <span>Согласие с политикой</span>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</footer>
+
+<!-- Модальное окно для фансибокс -->
+<div class="modal modal-none">
+    <img src="" alt="">
+    <div class="modal-close">
+        <img src="img/close.png" alt="">
+    </div>
+</div>
+
+<script src="js/form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/presentation.js"></script>
+<script src="js/support.js"></script>
+
+</body>
+</html>

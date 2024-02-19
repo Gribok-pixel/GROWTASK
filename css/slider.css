@@ -1,0 +1,139 @@
+/* Стили блока слайдера */
+.container {
+    height: 808px;
+    padding: 120px 0 120px 250px;
+}
+
+.slider-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 250px;
+    margin-bottom: 40px;
+}
+
+.slider-head__title {
+    font-family: 'Gogh';
+    font-size: 40px;
+    color: #05051A;
+}
+
+.slider-head__btn {
+    display: flex;
+}
+.slider-head__btn div {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-left: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 20px 0px #0D40401A;
+    transition: all .3s;
+}
+
+.slider-head__btn div:hover {
+    cursor: pointer;
+    background-color: var(--aqua-hover);
+}
+
+
+/* Сам слайдер: "slider-carousel__line - ряд картинок" ездит в лево-право за ширмой "slider-carousel" */
+.slider-carousel {
+    overflow: hidden;
+    cursor: grabbing;
+}
+
+.slider-carousel__line {
+    display: flex;
+}
+.slider-img {
+    position: relative;
+    margin-right: 20px;
+}
+.slider-img__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+
+    position: absolute;
+    bottom: 0;
+}
+.slider-img img {
+    border-radius: 8px;
+    width: 340px;
+    z-index: 1;
+}
+.slider-img img:hover ~ .slider-img__title{
+    background-color: var(--aqua-main);
+}
+.slider-img-size {
+    width: 340px;
+}
+
+@media (max-width: 1919px) {
+    .container {
+        height: 748px;
+        padding: 120px 0 120px 40px;
+    }
+    .slider-head {
+        padding-right: 40px;
+    }
+    
+
+
+    .slider-img img {
+        width: 304px;
+        height: 420px;
+        object-fit: cover;
+    }
+    .slider-img-size {
+        width: 340px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .container {
+        height: 588px;
+        padding: 40px 0 80px 16px;
+    }
+    .slider-head {
+        padding-right: 16px;
+        margin-bottom: 40px;
+    }
+    .slider-head__title {
+        font-size: 28px;
+    }
+
+
+    .slider-img {
+        margin-right: 16px;
+    }
+    .slider-img img {
+        width: 280px;
+        height: 400px;
+    }
+    .slider-img-size {
+        width: 280px;
+    }
+}
+@media (max-width: 768px) {
+    .slider-head__btn {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,181 @@
+section {
+    background-color: var(--aqua-hover);
+    height: 1520px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+    position: relative;
+}
+
+.section__text {
+    /* Прилипание до конца картинок */
+    position: sticky; 
+    height: 100%;
+    top: 120px;
+    left: 0px;
+}
+
+.section__title {
+    font-family: 'Gogh';
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #1A1605;
+}
+
+.section__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 80px;
+    width: 580px;
+    color: var(--dark);
+}
+
+.section__conditions .condition {
+    width: 580px;
+    height: 180px;
+    background-color: var(--black);
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.condition-title {
+    font-family: 'Gogh';
+    font-size: 56px;
+    color: var(--aqua-light);
+}
+
+.condition-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Блок изображений */
+.section__image img{
+    width: 700px;
+    height: 400px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 1919px) {
+    section {
+        height: 1280px;
+    }
+
+
+    .section__image img {
+        width: 628px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 1365px) {
+    section {
+        height: 808px;
+    }
+    .section {
+        flex-direction: column;
+        padding: 80px 0;
+    }
+    .section__text {
+        display: flex;
+        justify-content: space-between;
+
+        position: static;
+    }
+    .section__title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .section__paragraph {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+        width: 360px;
+    }
+    .section__conditions .condition {
+        width: 360px;
+        height: 108px;
+        padding: 20px;
+    }
+    .condition:nth-child(1) {
+        height: 132px;
+    }
+    .condition-title {
+        font-size: 32px;
+    }
+
+
+    /* Анимация */
+    .section__image {
+        margin-top: 40px;
+        overflow: hidden;
+    }
+    .scroll-img {
+        display: flex;
+        animation-name: slider;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+    }
+    .section__image img {
+        width: 280px;
+        height: 200px;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 16px;
+    }
+    @keyframes slider {
+        from {
+            margin-left: calc(10%);
+        }
+        to {
+            margin-left: calc(-30%);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        height: 1016px;
+    }
+    .section {
+        flex-direction: column;
+        padding: 80px 0;
+    }
+    .section__text {
+        height: 596px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .section__paragraph {
+        margin-bottom: 40px;
+    }
+
+
+    .section__image {
+        margin-top: 60px;
+    }
+    @keyframes slider {
+        from {
+            margin-left: calc(10%);
+        }
+        to {
+            margin-left: calc(-150%);
+        }
+    }
+}
