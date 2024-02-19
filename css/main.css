@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
 
-    height: 860px;
+    height: 940px;
     padding: 120px 0 250px;
 }
 
@@ -83,7 +83,7 @@
 
 @media (max-width: 1919px) {
     .main {
-        height: 788px;
+        height: 868px;
         padding: 120px 0;
     }
     .main__image img {
@@ -93,7 +93,7 @@
 }
 @media (max-width: 1365px) {
     .main {
-        height: 500px;
+        height: 600px;
         padding: 140px 0 80px;
     }
     .main__text {
@@ -142,7 +142,7 @@
 @media (max-width: 767px) {
     .main {
         display: block;
-        height: 846px;
+        height: 926px;
     }
     .main__text {
         position: relative;
