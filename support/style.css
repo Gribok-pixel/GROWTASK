@@ -1,0 +1,31 @@
+.support {
+    padding: 120px 250px;
+}
+
+.support__title {
+    font-size: 40px;
+    color: #05051A;
+    margin-bottom: 60px;
+}
+
+.support__container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.support__drop {
+    border-radius: 8px;
+    background-color: aqua;
+}
+
+.support__item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.support__icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(189, 194, 194);
+}
